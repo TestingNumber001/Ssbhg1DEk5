@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": true,
+        "checkJs": true,
+        "jsx": "react",
+        "lib": ["ESNext"],
+        "moduleResolution": "Node",
+        "target": "ESNext",
+        "outDir": "build",
+        "rootDir": "src",
+        "sourceMap": true
+    }
+}
