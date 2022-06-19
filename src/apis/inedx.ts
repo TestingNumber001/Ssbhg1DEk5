@@ -25,7 +25,9 @@ export const ApiHandler: express.RequestHandler = function ApiHandler ( req: exp
             if ( uuid === undefined ) return void res.end('Uuid must be provided.');
 
             const auth = getAuth( firebaseApp );
-            const { email, password }: { email?: string; password?: string } = req.body ?? req.query;
+            const { email, password }: {
+                email?: string; password?: string
+            } = req.body ?? req.query;
 
             signInWithEmailAndPassword( auth, email, password ).then( function () {
                 loginStateStorage[uuid] = auth.currentUser;
