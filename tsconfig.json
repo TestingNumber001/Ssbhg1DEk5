@@ -3,8 +3,7 @@
         "allowJs": true,
         "alwaysStrict": true,
         "checkJs": true,
-        "moduleResolution": "Node",
-        "target": "ESNext"
+        "moduleResolution": "Node"
     },
 
     "include": [
