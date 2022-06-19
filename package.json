@@ -2,6 +2,7 @@
   "name": "tongli-reader-server",
   "version": "1.0.0",
   "main": "build/index.js",
+  "type": "module",
   "scripts": {
     "dev": "npm-run-all -p dev:*",
     "dev:start": "nodemon ./build",
