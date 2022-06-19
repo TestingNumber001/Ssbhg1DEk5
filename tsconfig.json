@@ -3,12 +3,17 @@
         "allowJs": true,
         "alwaysStrict": true,
         "checkJs": true,
-        "jsx": "react",
-        "lib": ["ESNext"],
         "moduleResolution": "Node",
-        "target": "ESNext",
-        "outDir": "build",
-        "rootDir": "src",
-        "sourceMap": true
+        "target": "ESNext"
+    },
+
+    "include": [
+        "./src/**/*"
+    ],
+
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJs"
+        }
     }
 }

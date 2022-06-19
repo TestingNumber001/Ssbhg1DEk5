@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { ApiHandler } from './apis/inedx';
+import { ApiHandler } from './apis';
 
 const app = express();
 
