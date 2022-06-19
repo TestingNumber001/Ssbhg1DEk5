@@ -20,7 +20,7 @@ export const ApiHandler: express.RequestHandler = function ApiHandler ( req: exp
     res.setHeader('content-type', 'text/plain; charset=utf-8');
 
     const methods = {
-        put: function signIn ( req: express.Request, res: express.Response ): void {
+        PUT: function signIn ( req: express.Request, res: express.Response ): void {
             const { uuid } = req.params;
             if ( uuid === undefined ) return void res.end('Uuid must be provided.');
 
@@ -38,7 +38,7 @@ export const ApiHandler: express.RequestHandler = function ApiHandler ( req: exp
             });
         },
 
-        get: function getIdtoken ( req: express.Request, res: express.Response ): void {
+        GET: function getIdtoken ( req: express.Request, res: express.Response ): void {
             const { uuid } = req.params;
             if ( uuid === undefined ) return void res.end('Uuid must be provided.');
 
@@ -54,7 +54,7 @@ export const ApiHandler: express.RequestHandler = function ApiHandler ( req: exp
             });
         },
 
-        delete: function  ( req: express.Request, res: express.Response ): void {
+        DELETE: function  ( req: express.Request, res: express.Response ): void {
             const { uuid } = req.params;
             if ( uuid === undefined ) return void res.end('Uuid must be provided.');
 

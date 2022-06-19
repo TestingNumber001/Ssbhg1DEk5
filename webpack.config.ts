@@ -2,7 +2,7 @@ import * as path from "path";
 import * as webpack from "webpack";
 
 const configuration: webpack.Configuration = {
-    entry: './src/index.ts',
+    entry: './src/index.js',
     target: 'node',
     mode: process.env.NODE_ENV as 'production' | 'development' | undefined ?? 'development',
     output: {
