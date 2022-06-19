@@ -7,7 +7,7 @@ var app = express();
 app.disable('x-powered-by');
 app.use(express.static('./public'));
 app.all(['/', '/:uuid', '/:uuid/:method'], apis_1.ApiHandler);
-var port = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 3000;
+var port = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 5000;
 app.listen(port, function () {
     return console.log("Your app is listening on port: ".concat(port, "."));
 });
