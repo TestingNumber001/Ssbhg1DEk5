@@ -55,7 +55,7 @@ var ApiHandler = function ApiHandler(req, res) {
                 return void res.end('Uuid must be provided.');
             var user = loginStateStorage[uuid];
             (user ? Promise.resolve(user) : getAnonymousUser()).then(function (user) {
-                return user.getIdToken();
+                return user.getIdToken(true);
             }).then(function (token) {
                 res.setHeader('content-type', 'application/json; charset=utf-8');
                 res.end(JSON.stringify({ isAnonymous: !user, token: token }));
